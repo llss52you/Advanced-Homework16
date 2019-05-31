@@ -1,0 +1,25 @@
+#include<stdio.h>
+#include<stdlib.h>
+
+int haha(void);
+
+int main(void){
+	
+    printf("2+4+6+~+100:%d\n", haha()); 
+    
+
+    system("pause");
+
+    return 0;
+}
+int haha(void){
+
+    static int gg=0;
+    
+    int qq;
+
+    for(qq=2;qq<=100;qq+=2){
+        gg+=qq;
+    }
+    return gg;
+}
